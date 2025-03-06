@@ -104,7 +104,7 @@ const Reviews = () => {
         <Slider ref={sliderRef} {...sliderSettings}>
           {reviewsData.map((review, index) => (
             <div key={index} className="px-2">
-              <div className="reviews-card p-8 bg-primaryLight border border-darkGray rounded-3xl max-md:p-4">
+              <div className="reviews-card p-8 md:min-h-[320px] bg-primaryLight border border-darkGray rounded-3xl max-md:p-4">
                 <div className="flex items-center gap-3 mb-8">
                   <img src={StarImg} alt="star-img" />
                   <img src={StarImg} alt="star-img" />

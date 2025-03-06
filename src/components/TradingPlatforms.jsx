@@ -1,6 +1,10 @@
 import React from 'react'
 import PlatformImg from "../assets/images/platform-5bg.webp";
 import PayoutBg from "../assets/images/payout-bg.webp";
+import Shield from "../assets/images/shield.png";
+import Etherum from "../assets/images/ethereum.png";
+import check from "../assets/images/check.svg";
+import { Link } from 'react-router-dom';
 
 const TradingPlatforms = () => {
   return (
@@ -25,12 +29,68 @@ const TradingPlatforms = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
             <div className="rounded-[48px] border border-[#B6FFB9] border-opacity-10
-            bg-gradient-to-b from-[#1CFF14] to-[#01FE1A] p-10 min-h-[409px]"
+            bg-gradient-to-b from-[#1CFF14] to-[#01FE1A] 
+            2xl:pl-[52px] xl:pl-[30px] lg:pl-5 max-lg:p-[40px_40px_0] max-md:p-[40px_20px_0] 2xl:min-h-[409px] 
+            grid 2xl:grid-cols-[1fr_0.95fr] lg:grid-cols-[1fr_0.75fr] md:grid-cols-1 xl:gap-6  items-center"
             style={{
                 background: `url(${PayoutBg})no-repeat center / cover`
-            }}></div>
+            }}>
+                <div className='lg:py-16 flex flex-col justify-center'>
+                    <h4 className='text-[#FDFEFE] text-left 2xl:text-4xl xl:text-3xl max-xl:text-[28px] max-lg:text-3xl font-medium leading-[1.2] mb-3 '>Payout Guarantee</h4>
+                    <p className='text-[#CFD6D3] text-xl leading-[1.4] text-left max-2xl:text-lg max-md:text-base'>At Eden Funding, we value your time and success. That’s why we guarantee you'll receive your payment within 72 hours, or we’ll add an extra $500 to your payout</p>
+                </div>
+                <div className='max-lg:mx-auto block'>
+                    <img src={Shield} alt="shield" />
+                </div>
+            </div>
             <div className="rounded-[48px] border border-[#B6FFB9] border-opacity-10
-            bg-[rgba(255,255,255,0.02)] p-8 min-h-[409px] shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] backdrop-blur-[210px]"></div>
+            bg-[rgba(255,255,255,0.02)] p-8 2xl:min-h-[409px] shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
+            backdrop-blur-[210px] flex flex-col justify-center">
+
+
+            <h4 className='text-white text-left  text-[28px] max-lg:text-2xl font-medium leading-[1.2] mb-8 '>Fast & Reliable Payouts</h4>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className='rounded-[28px] border border-[#b6ffc6] border-opacity-10 
+                bg-white/5 shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
+                backdrop-blur-[210px] p-4 flex items-center justify-center'>
+                    <img src={Etherum} alt="eterum" />
+                </div>
+                <div className='relative overflow-hidden rounded-[28px] border border-[#b6ffc6] 
+                border-opacity-10 bg-white/5 shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
+                backdrop-blur-[210px] p-[50px_24px_24px] flex flex-col justify-end gap-3'>
+                <span className='text-sm text-[#0F0F0F] h-[44px] px-[26px] bg-[#0EF3A5] absolute top-0 left-0 flex items-center 
+                rounded-[28px_0_28px_0]'>Upgrades</span>
+                <div className="rounded-[80px] bg-white/10 backdrop-blur-[27px] px-2.5 py-2  
+                flex gap-2 text-sm text-white w-full">
+                <img src={check} alt="check" />
+                <span>Huge profit splits</span>
+                </div>
+                <div className="rounded-[80px] bg-white/10 backdrop-blur-[27px] px-2.5 py-2  
+                flex gap-2 text-sm text-white w-full">
+                <img src={check} alt="check" />
+                <span>HFT allowed to pass</span>
+                </div>
+                </div>
+            </div>
+            <ul className="grid grid-cols-2  gap-6 mt-8">
+                            <li>
+                              <Link
+                                to="/"
+                                className="btn font-syne text-customDark bg-customGreen px-10"
+                              >
+                                More Payouts
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/"
+                                className="btn font-syne text-customLightGreen bg-customTransparentWhite px-10"
+                              >
+                                Get Funded
+                              </Link>
+                            </li>
+                          </ul>
+            </div>
         </div>
       </div>
     </section>
