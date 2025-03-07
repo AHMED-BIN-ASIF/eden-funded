@@ -30,12 +30,12 @@ const TradingPlatforms = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
             <div className="rounded-[48px] border border-[#B6FFB9] border-opacity-10
             bg-gradient-to-b from-[#1CFF14] to-[#01FE1A] 
-            2xl:pl-[52px] xl:pl-[30px] lg:pl-5 max-lg:p-[40px_40px_0] max-md:p-[40px_20px_0] 2xl:min-h-[409px] 
-            grid 2xl:grid-cols-[1fr_0.95fr] lg:grid-cols-[1fr_0.75fr] md:grid-cols-1 xl:gap-6  items-center"
+            2xl:pl-[52px] xl:pl-[30px]  max-lg:p-[40px_40px_0] md:pl-7  max-md:p-[40px_20px_0] 2xl:min-h-[409px] 
+            grid 2xl:grid-cols-[1fr_0.95fr]  xl:grid-cols-[1fr_0.75fr] lg:grid-cols-1 md:grid-cols-[1fr_0.75fr] max-md:grid-cols-1 xl:gap-6  items-center"
             style={{
                 background: `url(${PayoutBg})no-repeat center / cover`
             }}>
-                <div className='lg:py-16 flex flex-col justify-center'>
+                <div className='xl:py-16 flex flex-col justify-center'>
                     <h4 className='text-[#FDFEFE] text-left 2xl:text-4xl xl:text-3xl max-xl:text-[28px] max-lg:text-3xl font-medium leading-[1.2] mb-3 '>Payout Guarantee</h4>
                     <p className='text-[#CFD6D3] text-xl leading-[1.4] text-left max-2xl:text-lg max-md:text-base'>At Eden Funding, we value your time and success. That’s why we guarantee you'll receive your payment within 72 hours, or we’ll add an extra $500 to your payout</p>
                 </div>
@@ -49,7 +49,7 @@ const TradingPlatforms = () => {
 
 
             <h4 className='text-white text-left  text-[28px] max-lg:text-2xl font-medium leading-[1.2] mb-8 '>Fast & Reliable Payouts</h4>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 gap-6">
                 <div className='rounded-[28px] border border-[#b6ffc6] border-opacity-10 
                 bg-white/5 shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
                 backdrop-blur-[210px] p-4 flex items-center justify-center'>
@@ -72,7 +72,7 @@ const TradingPlatforms = () => {
                 </div>
                 </div>
             </div>
-            <ul className="grid grid-cols-2  gap-6 mt-8">
+            <ul className="grid grid-cols-1  sm:grid-cols-2  gap-6 mt-8">
                             <li>
                               <Link
                                 to="/"

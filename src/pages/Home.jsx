@@ -10,6 +10,7 @@ import ContactNow from "../components/ContactNow";
 import Trade from "../components/Trade";
 import StatsSection from "../components/StatsSection";
 import TradingPlatforms from "../components/TradingPlatforms";
+import InstantFunding from "../components/InstantFunding";
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <HowItsWork />
       <TradingPlatforms />
       <Products />
+      <InstantFunding/>
       <Reviews />
       <Faqs />
       <ContactNow />
