@@ -5,7 +5,8 @@ import InstagramLogo from "../assets/images/instagram.svg";
 import YoutubeLogo from "../assets/images/youtube.svg";
 import FacebookLogo from "../assets/images/facebook.svg";
 import ArrowDown from "../assets/images/scroll-down.svg";
-import BannerImg from "../assets/images/banner-bg.svg";
+import BannerImg from "../assets/images/banner-bg.webp";
+import starImage from "../assets/images/dots-bg.webp";
 // import StoneImg from "../assets/images/stone.png";
 
 const Banner = () => {
@@ -13,13 +14,18 @@ const Banner = () => {
     <section
       className="flex justify-center items-center pt-28 xl:pt-[176px] pb-24 xl:pb-[120px] max-md:pb-14 bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url(${BannerImg})`,
-        backgroundPosition: `center center`,
+        // background: `#091612`, // Base background color
+  backgroundImage: `
+    linear-gradient(to bottom, rgba(9, 22, 18, 0) 0%, #091612 80%), 
+    url(${BannerImg})`,
+  backgroundPosition: "center center, center 10%",
+  backgroundSize: "cover, cover",
+  backgroundRepeat: "no-repeat, no-repeat",
       }}
     >
       {/* <div className="banner-img absolute left-0 top-0 h-full w-full"></div> */}
       {/* <img src={BannerImg} alt="banner-img" className="banner-img" /> */}
-      <div className="container relative h-full">
+      <div className="container relative h-full ">
         <div className="max-w-[1000px] w-[90%] mx-auto py-10 lg:py-16 xl:py-[90px] px-14 max-md:px-0 max-md:w-full">
           {/* <img src={StoneImg} alt="" className="stone" /> */}
           {/* <div className="stone">
