@@ -12,9 +12,9 @@ import starImage from "../assets/images/dots-bg.webp";
 const Banner = () => {
   return (
     <section
-      className="flex justify-center items-center pt-28 xl:pt-[176px] pb-24 xl:pb-[120px] max-md:pb-14 bg-cover bg-no-repeat"
+      className="flex justify-center items-center pt-28 xl:pt-[176px] pb-24 xl:pb-[120px] max-md:pb-14 bg-cover bg-no-repeat relative"
       style={{
-        // background: `#091612`, // Base background color
+        background: `#091612`, // Base background color
   backgroundImage: `
     linear-gradient(to bottom, rgba(9, 22, 18, 0) 0%, #091612 80%), 
     url(${BannerImg})`,
@@ -25,7 +25,7 @@ const Banner = () => {
     >
       {/* <div className="banner-img absolute left-0 top-0 h-full w-full"></div> */}
       {/* <img src={BannerImg} alt="banner-img" className="banner-img" /> */}
-      <div className="container relative h-full ">
+      <div className="container relative h-full z-[3]">
         <div className="max-w-[1000px] w-[90%] mx-auto py-10 lg:py-16 xl:py-[90px] px-14 max-md:px-0 max-md:w-full">
           {/* <img src={StoneImg} alt="" className="stone" /> */}
           {/* <div className="stone">
@@ -99,6 +99,13 @@ const Banner = () => {
                     </div> */}
         </div>
       </div>
+      <div  className="w-full h-full inset-0 absolute z-1"
+      style={{
+          backgroundImage: `
+          url(${starImage})`,
+        backgroundSize: "25%",
+        backgroundRepeat: "repeat",
+      }}></div>
     </section>
   );
 };

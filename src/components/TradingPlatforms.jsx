@@ -55,7 +55,7 @@ const TradingPlatforms = () => {
                     <img src={Etherum} alt="eterum" />
                 </div>
                 <div className='relative overflow-hidden rounded-[28px] border border-[#b6ffc6] 
-                border-opacity-10 bg-white/5 shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
+                border-opacity-10 bg-[rgb(255,255,255,0.05)] shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
                 backdrop-blur-[210px] p-[50px_24px_24px] flex flex-col justify-end gap-3'>
                 <span className='text-sm text-[#0F0F0F] h-[44px] px-[26px] bg-[#0EF3A5] absolute top-0 left-0 flex items-center 
                 rounded-[28px_0_28px_0]'>Upgrades</span>
