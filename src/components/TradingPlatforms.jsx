@@ -8,30 +8,31 @@ import { Link } from 'react-router-dom';
 
 const TradingPlatforms = () => {
   return (
-    <section className="py-28">
+    <section className="py-28 max-md:py-12">
       <div className="max-w-full w-[96%] mx-auto px-4 text-center max-md:w-[90%]">
       <h2 className="text-5xl text-[#FDFEFE] font-medium mb-4 max-md:text-4xl">
       Trading Platforms
         </h2>
         {/* Section Subtitle */}
-        <p className="text-lg text-white text-opacity-50 mb-20 max-w-[754px] mx-auto max-md:text-base">
+        <p className="text-lg text-white text-opacity-50 mb-20 max-w-[754px] mx-auto max-md:text-base max-md:mb-10">
         PropPalace offers top—tier trading platforms with fast transactions, advanced tools, and expert 
         support empowering you to trade with confidence and precision
         </p>
-        <div className="rounded-[48px] p-10 min-h-[409px] flex flex-col items-center justify-center"
+        <div className="rounded-[48px] p-10 min-h-[409px] flex flex-col items-center justify-center max-md:min-h-72 max-md:p-6 max-md:rounded-3xl"
         style={{
             background: ` linear-gradient(180deg, rgba(24, 26, 56, 0.00) 0%, #181A38 100%), 
             linear-gradient(0deg, rgba(32, 158, 51, 0.32) 0%, rgba(32, 158, 51, 0.32) 100%), 
             url(${PlatformImg})  50% / cover no-repeat, rgba(121, 255, 157, 0.04)`
         }}>
             <span className="bg-gradient-to-b from-[#14FF57] to-[#01FE34] 
-            bg-clip-text text-transparent text-6xl font-medium text-center font-syne">Platform 5</span>
+            bg-clip-text text-transparent text-6xl font-medium text-center font-syne max-md:text-4xl">Platform 5</span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
             <div className="rounded-[48px] border border-[#B6FFB9] border-opacity-10
             bg-gradient-to-b from-[#1CFF14] to-[#01FE1A] 
-            2xl:pl-[52px] xl:pl-[30px]  max-lg:p-[40px_40px_0] md:pl-7  max-md:p-[40px_20px_0] 2xl:min-h-[409px] 
-            grid 2xl:grid-cols-[1fr_0.95fr]  xl:grid-cols-[1fr_0.75fr] lg:grid-cols-1 md:grid-cols-[1fr_0.75fr] max-md:grid-cols-1 xl:gap-6  items-center"
+            2xl:pl-[52px] xl:pl-[30px]  max-lg:p-[00px_0px_0px] md:pl-7  max-md:p-[40px_20px_0] 2xl:min-h-[409px] 
+            grid 2xl:grid-cols-[1fr_0.95fr]  xl:grid-cols-[1fr_0.75fr] lg:grid-cols-1 md:grid-cols-[1fr_0.75fr] max-md:grid-cols-1 xl:gap-6  items-center
+            max-md:rounded-3xl"
             style={{
                 background: `url(${PayoutBg})no-repeat center / cover`
             }}>
@@ -45,9 +46,7 @@ const TradingPlatforms = () => {
             </div>
             <div className="rounded-[48px] border border-[#B6FFB9] border-opacity-10
             bg-[rgba(255,255,255,0.02)] p-8 2xl:min-h-[409px] shadow-[inset_0px_24px_24px_-10px_rgba(1,132,254,0.04)] 
-            backdrop-blur-[210px] flex flex-col justify-center">
-
-
+            backdrop-blur-[210px] flex flex-col justify-center max-md:rounded-3xl max-md:px-4">
             <h4 className='text-white text-left  text-[28px] max-lg:text-2xl font-medium leading-[1.2] mb-8 '>Fast & Reliable Payouts</h4>
             <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 gap-6">
                 <div className='rounded-[28px] border border-[#b6ffc6] border-opacity-10 

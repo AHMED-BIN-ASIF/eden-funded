@@ -38,7 +38,7 @@ const StatsSection = () => {
   });
 
   return (
-    <section ref={ref} className=" text-white py-28">
+    <section ref={ref} className=" text-white py-28 max-md:py-12">
       <div className="max-w-full w-[90%] mx-auto px-4 text-center">
         {/* Section Title */}
         <h2 className="text-5xl font-medium mb-4 max-md:text-4xl">
