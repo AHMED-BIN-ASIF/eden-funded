@@ -57,17 +57,16 @@ const Banner = () => {
               Welcome to Eden Funding
             </span>
             <h1 className="text-5xl xl:text-[74px] font-medium leading-[1.1] text-customWhite mb-3 max-md:text-[36px]">
-              Unlock Up <br /> To 500k Instantly
+              Unlock Up <br /> To 500k
             </h1>
             <p className="text-lg xl:text-xl font-normal leading-snug text-customGray mb-8">
-              In Simulated Funding, Powered By <br /> MT5, achieve financial
-              growth
+              In Simulated Funding, Powered By <br /> MT5
             </p>
             <Link
               to="/"
               className="btn max-w-[228px] mx-auto h-14 bg-customGreen"
             >
-              Get Started
+             Start
             </Link>
           </div>
           <ul

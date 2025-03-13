@@ -83,6 +83,7 @@ const HowItsWork = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
